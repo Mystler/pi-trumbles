@@ -13,4 +13,6 @@ if (window.trumbleSeed && window.trumbles && window.trumbles >= 3) {
     target: document.getElementById("t-overlay") as Element,
     props: { seed: window.trumbleSeed, trumbles: window.trumbles },
   });
+} else if (window.trumbleSeed) {
+  localStorage.removeItem("Trumbles_" + window.trumbleSeed);
 }
