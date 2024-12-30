@@ -8,7 +8,7 @@ declare global {
   }
 }
 
-if (window.trumbleSeed && window.trumbles) {
+if (window.trumbleSeed && window.trumbles && window.trumbles >= 3) {
   mount(TrumbleCanvas, {
     target: document.getElementById("t-overlay") as Element,
     props: { seed: window.trumbleSeed, trumbles: window.trumbles },
