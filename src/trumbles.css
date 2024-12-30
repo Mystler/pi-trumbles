@@ -1,0 +1,12 @@
+#t-overlay {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+#t-overlay canvas {
+  pointer-events: auto;
+}
